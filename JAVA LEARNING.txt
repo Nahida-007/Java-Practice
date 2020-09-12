@@ -1,0 +1,45 @@
+1.a java program can contain any number of class 
+but atmost one class need to be declared as public
+
+2.only one public class is allowed
+
+3.if there is no public class u can take any name to save the java program 
+class A
+{
+}
+class B
+{
+}
+class C
+{
+}
+class D
+
+4.if there is one public classs we need to save program with same name
+{
+}
+public class B
+{
+}
+class C
+{
+}
+class D
+{
+}
+5.if a program have multiple main method then we can save with any class name because it doesn't have public.
+class A
+{
+public static void main(String[] args)
+{
+S.O.P("");
+}
+class B
+{
+public static void main(String[] args)
+{
+S.O.P("");
+}
+class C
+{
+}

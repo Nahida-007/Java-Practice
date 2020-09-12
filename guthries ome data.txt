@@ -1,0 +1,106 @@
+System Administration Role.
+2-) Warehouse Management Role.
+3-) Warehouse Role.
+4-) Deliveries Role.
+5-) Sales Role.
+6-) Finance Role.
+7-) User Management Role.
+8-)  Customer Ordering Role.
+9-)  Customer Ordering (restricated) Role.
+
+
+
+
+
+   {
+      "roleId": "d4a08f3c-96a1-4f66-b5c5-29bad4e44440",
+      "role": "Deliveries Role"
+    },
+
+
+
+
+ {
+      "id": "6301d352-8fd0-4942-b60b-f2d29346253a",
+      "firstName": "anvash",
+      "lastName": "arora",
+      "userId": "55_ghht",
+      "phoneNumber": null,
+      "emaiId": "anvash000.arora11@biT60.dehh",
+      "roles": [
+        {
+          "roleId": "ff3f660a-8787-46bc-8784-a9c7fcd0648e",
+          "role": "Warehouse Management Role"
+        }
+      ],
+      "customerId": ""
+    },
+
+1a16a8c0-6487-4112-9357-400ec441e071
+
+bdf462b1-1efc-44c0-9209-7c6e67a99036
+2684f1a7-9395-4dea-82bf-91026db61bb3
+1ddf4803-304b-4971-87c2-6e6178c25b27
+60bd2bfd-2223-49ea-bc7a-3997586c1eba
+c1117edf-b277-493b-9018-2d4a0efcb58d
+a130c492-ac05-4131-af95-5444fe939903
+8de03663-a074-408f-8329-a461cba1f84d
+bbc98db5-0696-4291-9c78-ff8eb428306e
+f7d115c2-13c8-4a92-bc5a-ad03638b5845
+c59ea9aa-3655-4c0b-97c9-b7d6523071c2
+aba13d56-9d9b-4d8e-8398-7af02397173c
+604f71ee-5578-40d1-83de-274d7825b596
+ec6e962a-6408-4676-a494-956e36f6ea6c
+2e0f6358-f9c8-4f2b-bbb2-7a7a00191a4f
+
+
+
+
+
+
+      "categoryId": "a130c492-ac05-4131-af95-5444fe939903",
+      "categoryName": "string"
+    },
+    {
+      "categoryId": "8de03663-a074-408f-8329-a461cba1f84d",
+      "categoryName": "Toys and Games"
+    },
+    {
+      "categoryId": "bbc98db5-0696-4291-9c78-ff8eb428306e",
+      "categoryName": "naresh"
+    },
+    {
+      "categoryId": "f7d115c2-13c8-4a92-bc5a-ad03638b5845",
+      "categoryName": "narashimha"
+    },
+    {
+      "categoryId": "c59ea9aa-3655-4c0b-97c9-b7d6523071c2",
+      "categoryName": "narashimha"
+    },
+    {
+      "categoryId": "aba13d56-9d9b-4d8e-8398-7af02397173c",
+      "categoryName": "Naresh 1"
+    },
+    {
+      "categoryId": "604f71ee-5578-40d1-83de-274d7825b596",
+      "categoryName": "2gthth"
+    },
+    {
+      "categoryId": "ec6e962a-6408-4676-a494-956e36f6ea6c",
+      "categoryName": "ashhsgb2242424"
+    },
+    {
+      "categoryId": "2e0f6358-f9c8-4f2b-bbb2-7a7a00191a4f",
+      "categoryName": "133"
+    }
+  ],
+
+
+
+
+
+
+
+supplierName is accepting digit also
+
+

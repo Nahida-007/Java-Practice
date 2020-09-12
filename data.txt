@@ -1,0 +1,59 @@
+product type id-9f67f940-f244-4259-8151-c80896f156a3
+product id-fb1b9bc2-c5be-4050-8d29-ee2197fd2bd8
+product name-fitbit versa
+supplier id-1a5138fb-3b10-4d6e-9867-e4f37aff123e
+warehouse id-6b349a7c-c794-4c87-a95b-3bf02e69fc03
+purchase order id-4583faaa-56f1-4245-b66b-acf0661c58de
+Purchase order receipt-4583faaa-56f1-4245-b66b-acf0661c58de
+                      -4583faaa-56f1-4245-b66b-acf0661c58de
+                      -
+
+WAREHOUSE ID-17ab3ce6-b10b-40cb-b8b3-780d9e8d00d5
+
+b3dcc994-9ba6-45b0-9cbd-816fc443788f
+
+-----------------------------------------------------------
+WAREHOUSE ID-f47d3d11-55eb-40e0-8b5f-da208682cf13
+PRODUCT TYPE ID-9d48308c-daed-44ab-bfbb-447c10a5e1da
+SUPPLIER ID-962851aa-26e1-43a1-a3a2-bbe7262332b4
+PRODUCT ID-05c4f10c-12dc-4489-bf0a-b546ad30aaeb
+  "supplierBatchNumber": "95412376",
+          "barCode": "000ADF040120201146",
+
+
+
+{
+                    "binId": "6e807fef-e3d6-4f0d-8636-bd360ee56b17",
+                    "binName": "001",
+                    "binFullName": "AA/001/AA/001",
+                    "binBarCode": "000001000001"
+                  },
+
+PURCHASE ORDER ID-6d7d118d-b7f9-4a6b-ae9b-99751fe47083
+PURCHASE ORDER REFERNCE-PO/S0022/2020/00002
+PURCHASE ORDER RECEIPT REFERNCE-PO/S0022/2020/00002/01
+PURCHASE REDEIPT ID-21776df4-8644-4f4f-b603-c5d609a2bc07
+
+---------------------------------------------------------------------------
+product type id-9847d28c-95de-4ac0-9aa4-6c1ccae39268---citizen watch----Citizen watch / Digital Watches - 5
+product type id-5b177ab2-028e-4c65-9262-c6d73843444f---jaeger watch-----JAEGER WATCH / SMART WATCHES - 10
+product type id-d983d1e9-11df-4c10-a316-70912bdd4c86---chopard watch----CHOPARD WATCH / ANALOG WATCHES - 5
+SUPPLIER ID-ed516b60-a488-4b97-b2c4-7b760b96c6f8---EIRIFIN SUPPLIER
+
+
+00FGFG040120201304
+345677
+
+
+
+
+SUPPLIER ID-b7d0af82-d289-4d58-9abe-e3106e98bfd8
+
+
+Rolex Watches / Analog Watches - 10
+IWC Watches / Digital Watches - 5
+VACHERON WATCHES / DIGITAL WATCHES - 5
+
+
+2423464665775
+3435353535555

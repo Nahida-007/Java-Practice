@@ -1,0 +1,337 @@
+udemy site
+nagabharat@synycssolutions.com
+synycs@1
+
+database: admin
+usename: root
+password: mongodb123
+
+
+JENKINS
+URL:-http://101.53.153.15:8080
+
+
+SMART VALUE UI
+URL:-http://101.53.153.15/#/
+
+URL:-http://35.187.235.179/Smart
+
+SMART VALUE CLIENT UI
+URL:-erpstaging.smartvalue.biz/
+USERNAME:-NagaBharat/gauravs
+
+branch@678
+PASSWORD:-branch@678
+ASSOCIATE ID:-3190656
+
+URL:-http://35.200.163.14/smart/erp
+URL:-http://34.73.177.200/smart/erp
+USERNAME:-gauravs
+PASSWORD:- branch@123
+
+URL:-
+URL:-http://34.73.177.200/smart
+USERNAME:- praval_mis
+PASSWORD:- pravaL@147
+
+Username:Praval_MIS
+Pwd:branch@678
+
+RAISING PO or STN
+
+USERNAME:- pravalp
+PASSWORD:- pravaL@123
+
+SMARTSHOPPE
+URL:   http://35.200.163.14/smart/SmartShoppe
+URL:   http://34.73.177.200/smart/SmartShoppe
+Username: abhijithc
+Pwd: ss@#21
+
+Username= ssadmin
+Pwd = Ssadmin!@123
+
+LEMART
+URL: http://35.200.163.14/smart/LeMart
+URL: http://34.73.177.200/smart/Lemart/  
+Username: udaanss
+Pwd: ss@#21
+
+LM To SS
+
+1st open Lemart with this URL-->http://34.73.177.200/smart/Lemart/
+2nd click on Go To SmartShoppee
+
+URL:  http://34.73.177.200/smart/smartoffice
+Username: 3567182
+Pwd: associate@678
+
+
+URL: http://34.73.177.200/smart/LeMart/  
+Uname: lmadmin            
+Pwd: LM@#123
+
+GENERATING BARCODE
+URL:-http://35.187.235.179/Smart/ERP/Barcode/BarcodeGeneratorOptions
+URL:-http://34.73.177.200/Smart/ERP/Barcode/BarcodeGeneratorOptions
+SQL DATA BASE
+URL-:smartvalue-1.database.windows.net
+USERNAME-: smartvalue
+PASSWORD-: Smart_Value1
+
+SS- TLY
+URL: http://34.73.177.200/smart/smartshoppe
+Username: ravina27
+Pwd: ss@#21
+
+CRM
+URL: http://34.73.177.200/smart/CRM
+Username: admin
+Pwd: Admin@123
+
+SQL QUERY
+select *from SV_Barcode_Generator
+
+1.select *from SV_Stock_Master where Product_ID=''
+2.select *from SV_Stock_Master where Product_ID='' and Available_Stock=''
+3.UPDATE SV_Stock_Master
+  set Available_Stock=''
+  where stock_id=''
+4.SELECT  *FROM SV_Barcode_Generator where Product_Id='2224' and Batch_Number='040420191847' and Shelf_Life='5'
+5.SELECT  *FROM SV_Barcode_Generator where Product_Id='2224' or Batch_Number='040420191847' or Shelf_Life='5'
+6.select *from SV_Barcode_Generator order by Shelf_Life asc
+7.select *from SV_Barcode_Generator order by Shelf_Life desc
+8.
+
+select * from SV_Orders where Order_No=''
+select * from SV_Order_Details where Order_ID=''
+select *from [dbo].[SV_Stock_Master] where branch_id=2 and Product_ID='';
+select top 10 * from SV_Order_Detail
+
+
+[IRCTC DETAILS]
+-IRCTCArchana
+-IRCTCPradhan123
+
+
+tusharkumar716@gmail.com
+Tushar@098
+
+
+CT Reference ID: CT20151531762
+Password: Trident@534
+
+
+Ctrl+F1(MORE)
+Alt+Enter(step defination file)
+Ctrl+Shift+A(increse font size)
+CTRL+Alt+S(Settings)
+quickfix create step defination(Alt+Enter)
+
+File
+New
+Project
+Java
+Project SDK:1.8(java version"1.8.0_181")
+Next
+[checkbox] Create project from template
+Next
+ProjectName
+Location
+Package
+Finish
+Right click on Project Name->Add Framework Support
+[checkbox]Maven
+OK
+search Maven Repository
+search for Cucumber java(info.cukes 1.2.5)
+copy and paste in pom.xml
+Right click on Project name->New->Directory
+Feature
+Drag the Feature file under SRC
+Go to settings(CTRL+ALT+S)
+Click on Plugins 
+search for Cucumber
+click on load more 
+install that cucumber for java plugin
+Right click on Feature->New->File
+Login.feature
+In Login.feature file
+Feature: Login Feature
+
+  Scenario: Login with correct username and password
+    Given I navigate to login page
+    And i enter username as admin and password as admin
+    And  i clicked login button
+    Then  i should go to Home page
+ 
+
+
+java->new->Package
+Refractor stepLogin and move to package Steps
+Drag Feature Directory under java
+
+
+
+100720191445
+
+
+https://www.linkedin.com/in/archana-pradhan-589884117
+
+PENUR00014
+RJLM1920SO000199
+
+
+wo dhup subhari
+
+
+
+
+May17-Nourish Protein Rich Butter Scotch 200gms 6 Plus 1
+
+
+access modifier  return type
+
+
+May17-Nourish Protein Rich Butter Scotch 200gms 6 Plus 1
+1735
+34-->FREE STOCK-->260
+HW300BP070920191053 
+
+BRANCH-2
+HW300BP  6    20 --->150--->130 P----->for 20 invoice i9s generated
+HW300BP  1    20---->25---->25 P
+
+QTY-25
+STOCK-2
+
+
+BRANCH-1124
+HW300BP 1   0
+HW300BP 6   0
+
+qty-24
+stock=3
+BRANCH-260
+HW300BP 1   34
+HW300BP 6   0
+
+
+
+
+0
+5
+1
+101
+
+220
+
+
+
+
+public static void main(String args[])
+public-Access Modifier---->which defines who can acess this method
+      -public means that this method will be accessible by any class(if other classes can acess this class)
+static-keyword
+
+void-Return Type---->it defines what the method can return
+    -void menas the method will not return any value
+
+main-Name of the method---->this method name is searched by jvm as a starting point 
+
+String args[]/String args-Parameter to the main method---->argument could be anything
+
+                  
+click select country
+//*[@class='select2-selection select2-selection--single']
+
+sendkeys
+//*[@class='select2-search__field']
+
+password sendkeys
+//*[@type='password']
+
+
+
+
+18100
+500
+17500
+400
+17100
+2000
+15100
+2000
+13100
+313
+12787
+90
+12697
+
+
+Aircheaf@123
+Download and install ImageConverter Plus
+
+edboo00068
+DLBR1920SO000945-3-5+1
+DLBR1920SO000944-3-2
+DLBR1920SO000926-4-130-105+25
+DLBR1920SO000902-5-160-130+30
+
+av stock-217  free stock-22 -------------->1124
+av stock-20+40+20+200+85+23+12      freestock-15+35+1+1+1+1------>1211
+
+
+
+
+july
+2
+august
+2
+september
+2-----4th september
+ -----21st september
+ -----23rd september
+ -----25th september
+october
+2-----2nd october
+ -----3rd october
+ -----4th october
+ -----5th october
+-----------------------------------------
+ -----7th october
+ -----9th october
+ -----10th october
+ -----11th october
+ -----12th october
+ -----14th october
+
+nazdeekiyaaan---shaandaar
+
+
+cyrussolutions
+AS2244AS
++44567834569
+PlotNo34BDwaSi2ndHudHeighNeLotupondMLColony-RoadNo.12-Banjara-Hills-PNagar
+Hyderabad
+PO16 7GZ
+
+
+C:\Users\admin>echo %PATH%
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"C:\WINDOWS\System32\OpenSSH\C:\Program Files\Java\jdk1.8.0_181\bin;";C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\admin\Downloads\chromedriver_win32;;C:\WINDOWS\System32\OpenSSH\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Roaming\npm;
+\System32\OpenSSH\C:\Program Files\Java\jdk1.8.0_181\bin;";C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\;C:\Progr
+
+
+2221
+3716565
+RJLM1920SO001281
+
+
+
+
+
+/*[@name='start_date']
+
+
+692c541b-4028-422d-8cac-8cffe38c554d
+e02c0f4b-bda5-421c-904e-9b144e7a2fe5

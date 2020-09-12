@@ -1,0 +1,489 @@
+package packagename;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import java.util.concurrent.TimeUnit;
+import java.lang.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
+import java.awt.*;
+import java.sql.Time;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.Select;
+import java.util.ArrayList;
+
+
+public class practice {
+
+
+
+
+    public static void main(String[] args) throws InterruptedException {
+
+        //Launching Browser
+
+        String path = "C:\\Users\\Admin\\Downloads\\chromedriver_win32\\chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver", path);
+        WebDriver driver = new ChromeDriver();
+
+        //Maximizing the window
+
+        driver.manage().window().maximize();
+
+        //waiting
+
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+
+
+        // waiting till visibiliblity od element
+
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+
+
+        //Launching the url
+
+        driver.get("https://bookjoy.biz/index.php/User/registersss");
+        WebElement E2;
+        E2 = wait.until(ExpectedConditions.visibilityOfElementLocated
+                (By.xpath("//*[@src='https://bookjoy.biz/assets/img/logo_bookjoy_main.png']")));
+
+        //Entering First Name
+
+        WebElement E1;
+        E1 = driver.findElement(By.xpath("//*[@name='firstname']"));     //("//*[@name='firstname']");
+        E1.sendKeys("ritvi");
+
+        //Entering Last Name
+
+        WebElement E3 = driver.findElement(By.xpath("//*[@name='lastname']"));
+        E3.sendKeys("shukla");
+
+        WebElement E5 = driver.findElement(By.xpath("//*[@class='iti-arrow']"));
+        E5.click();
+
+
+        WebElement E4 = driver.findElement(By.xpath("//*[text()='India (????)']"));
+        E4.click();
+
+        //Entering mobile number
+
+        WebElement E6 = driver.findElement(By.xpath("//*[@id='mobile']"));
+        E6.sendKeys("8345678936");
+
+        //Entering email id
+
+        WebElement E7 = driver.findElement(By.xpath("//*[@name='email']"));
+        E7.sendKeys("ritvi11@gmail.com");
+
+        //Entering Password
+
+        WebElement E8 = driver.findElement(By.xpath("//*[@name='password']"));
+        E8.sendKeys("ritvi");
+
+        //Entering password again for confirmation
+
+        WebElement E9 = driver.findElement(By.xpath("//*[@name='confirm_password']"));
+        E9.sendKeys("ritvi");
+
+        //clickiing the checkbox
+
+        WebElement E10 = driver.findElement(By.xpath("//*[@type='checkbox']"));
+        E10.click();
+
+        //clicking the submit button for registration
+
+        WebElement E11 = driver.findElement(By.xpath("//*[@name='submit']"));
+        E11.click();
+
+        //searching by entering customer name
+
+        WebElement E20 = driver.findElement(By.xpath("//*[@name='search']"));
+        E20.sendKeys("raghu");
+        E20.sendKeys(Keys.ENTER);
+
+        //checking wheather that customer is really present
+
+        String Actualtext = driver.findElement(By.xpath("//*[text()='No customers found. Now click below to Add New Customer to your salon.']")).getText();
+        String Expectedtext = "raghu";
+        Assert.assertNotEquals(Actualtext, Expectedtext);
+        System.out.println("assertion pass as no customer found");
+        driver.navigate().to("https://bookjoy.biz/index.php/user/login");
+
+
+
+
+
+        //ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        //driver.switchTo().window(tabs.get(1)); //switches to new tab
+       // driver.get("https://bookjoy.biz/index.php/user/login");
+
+        WebElement E12=driver.findElement(By.xpath("//*[@name='email']"));
+        E12.sendKeys("info@brisbanelashes.com");
+        WebElement E13=driver.findElement(By.xpath("//*[@name='password']"));
+        E13.sendKeys("123456789");
+        WebElement E14=driver.findElement(By.xpath("//*[@name='LoginFRM']"));
+        E14.click();
+
+        // Enter the name on the search text bar
+        // E15=driver.findElement(By.xpath("(//*[@placeholder=' Search Customers '])[2]"));
+        //E15.sendKeys("sneha");
+        //E15.sendKeys(Keys.ENTER);
+        //(//*[@class='form-group form-search is-empty'])[2]
+        //(//*[@name='search'])[2]
+////*[@class='fav_logo']
+        //(//*[@name='search'])[2]
+        //Select select=new Select(driver.findElement());
+        //select.selectByIndex(3);
+        //((JavascriptExecutor)driver).executeScript("return document.getElementByClass('iti-arrow').selectedIndex='"+3+"');
+
+        //WebElement E1=driver.findElement(By.xpath("//*[@class='ssfdvf']"));
+        //E1.click();
+
+    }
+
+}
+
+------------------------------------------------------------------
+Feature: Login Feature
+
+  Scenario: Login with correct username and password
+    Given I navigate to login page
+    And i enter username as admin and password as admin
+    And  i clicked login button
+    Then  i should go to Home page
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+package Steps;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+
+public class MyLoginStep {
+    @Given("^I navigate to login page$")
+    public void iNavigateToLoginPage() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+
+    }
+    @And("^i enter username as admin and password as admin$")
+    public void iEnterUsernameAsAdminAndPasswordAsAdmin() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+
+    }
+
+    @And("^i clicked login button$")
+    public void iClickedLoginButton() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Then("^i should go to Home page$")
+    public void iShouldGoToHomePage() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+}
+----------------------------------------------------------------------
+package packagename;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Practice1 {
+    public String baseUrl="http://34.93.120.7/smart/Shopping/Home/Shopping";
+    String Path="C:\\Users\\admin\\Downloads\\chromedriver_win32\\chromedriver.exe";
+    public WebDriver driver;
+
+    @Test
+    public void launchBrowser()
+    {
+System.out.println("launching browser");
+System.setProperty("webdriver.chrome.driver",Path);
+ChromeDriver driver=new ChromeDriver();
+driver.get(baseUrl);
+String expectedTitle="Smart Value | Shopping";
+String actualTitle=driver.getTitle();
+        Assert.assertEquals(expectedTitle,actualTitle);
+    }
+}
+------------------------------------------------------------------------------
+package packagename;
+
+import org.testng.annotations.*;
+
+import java.beans.Transient;
+
+public class Practice3 {
+
+
+
+    /*
+    setup of system property----->@BeforeSuit
+    launching chrome browser----->@BeforeTest
+    enter URL-------------------->@BeforeClass
+    login to app----------------->@BeforeMethod
+    google title----------------->@Test
+    Logout from app-------------->@AfterMethod
+    Close Browser---------------->@AfterClass
+    Delete all cookies----------->@AfterTest
+    Test Report------------------>@AfterSuit
+     */
+
+
+    @BeforeSuite
+    public void setUp()
+    {
+        System.out.println("setup of system property");
+    }
+
+    @BeforeTest
+    public void launchBrowser()
+    {
+        System.out.println("launching chrome browser");
+    }
+
+    @BeforeClass
+    public void url()
+    {
+        System.out.println("enter URL");
+    }
+    @BeforeMethod
+    public void login()
+    {
+        System.out.println("login to app");
+    }
+    @Test
+    public void googleTitleTest()
+    {
+        System.out.println("google title");
+    }
+    @Test
+    public void searchTest()
+    {
+        System.out.println("searching");
+    }
+    @Test
+    public  void dropdown()
+    {
+        System.out.println("select dropdown");
+    }
+    @AfterMethod
+    public void logOut()
+    {
+        System.out.println("Logout from app");
+    }
+    @AfterClass
+    public  void closeBrowser()
+    {
+        System.out.println("Close Browser");
+    }
+    @AfterTest
+    public void deleteAllCookies()
+    {
+        System.out.println("Delete all cookies");
+    }
+    @AfterSuite
+    public void generateTestReport()
+    {
+        System.out.println("Test Report");
+    }
+}
+-----------------------------------------------------------------
+package demo;
+import com.google.common.collect.Multimaps;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.LocalFileDetector;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.Keys;
+
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.*;
+
+
+public class automationtesting {
+
+
+    public static void main (String[] args)  {
+
+        String Path="C:\\Users\\admin\\Downloads\\chromedriver_win32\\chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver",Path);
+        WebDriver driver= new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("http://demo.automationtesting.in");
+        WebElement E1=driver.findElement(By.xpath("//*[@placeholder='Email id for Sign Up']"));
+        E1.sendKeys("archanapradhan12345@gmail.com");
+        WebElement E2=driver.findElement(By.xpath("//*[@src='enter.png']"));
+        E2.click();
+        WebElement E3=driver.findElement(By.xpath("//*[@placeholder='First Name']"));
+        E3.sendKeys("Archana");
+        WebElement E4=driver.findElement(By.xpath("//*[@placeholder='Last Name']"));
+        E4.sendKeys("Pradhan");
+        WebElement E5=driver.findElement(By.xpath("//*[@ng-model='Adress']"));
+        E5.sendKeys("Plot no.23/4 Banjara Hills Road number 1 Hyderabad Telangana");
+        WebElement E6=driver.findElement(By.xpath("//*[@ng-model='EmailAdress']"));
+        E6.sendKeys("archanapradhan12345@gmail.com");
+        WebElement E7=driver.findElement(By.xpath("//*[@ng-model='Phone']"));
+        E7.sendKeys("9089012678");
+        WebElement E8=driver.findElement(By.xpath("//*[@value='Male']"));
+        E8.click();
+        WebElement E9=driver.findElement(By.xpath("(//*[@type='checkbox'])[3]"));
+        E9.click();
+        WebElement E10=driver.findElement(By.xpath("//*[@class='ui-autocomplete-multiselect ui-state-default ui-widget']"));
+        E10.click();
+        WebElement E11=driver.findElement(By.xpath("//*[text()='Arabic']"));
+        E11.click();
+        Select E12=new Select(driver.findElement(By.xpath("//*[@ng-model='Skill']")));
+        //E11.selectByVisibleText("Backup Management");
+
+        E12.selectByIndex(5);
+        ((JavascriptExecutor)driver).executeScript("scroll(0,500)");
+        Select E13=new Select(driver.findElement(By.xpath("//*[@ng-model='country']")));
+        E13.selectByIndex(4);
+        WebElement E17=driver.findElement(By.xpath("//*[@class='select2-selection select2-selection--single']"));
+        E17.click();
+        WebElement E18=driver.findElement(By.xpath("//*[@class='select2-search__field']"));
+        E18.sendKeys("india");
+        driver.findElement(By.xpath("//*[@class='select2-search__field']")).sendKeys(Keys.ENTER);
+        Select E14=new Select(driver.findElement(By.xpath("//*[@ng-model='yearbox']")));
+        E14.selectByVisibleText("1995");
+        Select E15= new Select(driver.findElement(By.xpath("//*[@ng-model='monthbox']")));
+        E15.selectByVisibleText("August");
+        Select E16=new Select( driver.findElement(By.xpath("//*[@ng-model='daybox']")));
+        E16.selectByVisibleText("16");
+        WebElement E19=driver.findElement(By.xpath("//*[@type='password']"));
+        E19.sendKeys("Aa@109283");
+        WebElement E20=driver.findElement(By.xpath("(//*[@type='password'])[2]"));
+        E20.sendKeys("Aa@109283");
+        ((JavascriptExecutor)driver).executeScript("scroll(500,0)");
+        //WebElement E21=driver.findElement(By.xpath("//*[@type='submit']"));
+        //E21.click();
+           WebElement E24 = driver.findElement(By.xpath("//*[@type='file']"));
+           E24.click();
+         StringSelection ss=new StringSelection("C:\\Users\\admin\\Pictures\\download");
+         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+         //Robot robot = new Robot();
+         //robot.keyPress(KeyEvent.VK_CONTROL);
+         //robot.keyPress(KeyEvent.VK_V);
+         //robot.keyRelease(KeyEvent.VK_V);
+         //robot.keyRelease(KeyEvent.VK_CONTROL);
+         //robot.keyPress(KeyEvent.VK_ENTER);
+         //robot.keyRelease(KeyEvent.VK_ENTER);
+           // enter the file path onto the file-selection input field
+           //uploadElement.sendKeys("C:\\Users\\admin\\Pictures\\download");
+
+
+
+
+        //WebElement E22=driver.findElement(By.xpath("//*[@type='file']"))
+      //  E22.sendKeys("");
+        //   WebElement E23=driver.findElement(By.xpath("//*[@type='file']"));
+         //  E23.click();
+         //  ((JavascriptExecutor)driver).executeScript("scroll");
+
+
+       // E10.sendKeys("ENGLISH");
+        //WebElement E11=driver.findElement(By.xpath("(//*[@ng-model='Skill'])"));
+        //E11.click();
+
+    }
+}
+-----------------------------------------------------------------------
+package com.gmail;
+
+public class AddTwoNumbers {
+
+    public static void main(String[] args)
+    {
+        int num1=20;
+        int num2=30;
+        int sum;
+        sum=num1+num2;
+
+        System.out.println("Sum of two number is:"+sum);
+    }
+}
+-------------------------------------------------------------------
+
+package com.gmail;
+import java.util.Scanner;
+
+public class AddingTwoNumberByScanner {
+    public static void main(String[] args)
+    {
+        /*int num1;
+        int num2;
+        int sum;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the First Number:");
+        num1=sc.nextInt();
+        System.out.println("Enter the Second Number:");
+        num2=sc.nextInt();
+        sc.close();
+        sum=num1+num2;
+        System.out.println("sum of the two Number:"+sum);
+        */
+
+
+
+        int num1;
+        int num2;
+        int sum;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter 1st number");
+        num1=sc.nextInt();
+        System.out.println("enter 2nd number:");
+        num2=sc.nextInt();
+        sc.close();
+        sum=num1+num2;
+        System.out.println("sum of 2 number:"+sum);
+
+    }
+}
+--------------------------------------------------------------------
+package com.gmail;
+
+import java.util.Scanner;
+
+public class EvenOrOdd {
+    public static void main(String[] args)
+    {
+        int num;
+        System.out.println("Enter a integer number");
+        Scanner sc=new Scanner(System.in);
+        num=sc.nextInt();
+        //if number is divisible by 2 then it is even number if not then its odd number
+        if(num%2==0) {
+            System.out.println("number is even number");
+        }
+        else
+            System.out.println("number is odd number");
+
+    }
+}
+

@@ -1,0 +1,14 @@
+In supplier management while cfreating supplier sucess message is taking time to come.
+if we are not providing any option for variant it should throw message that product option is required but it is throwing warning invalid form'
+search filter is not present in inactive product variant
+message need to be changed for update in add product and back button is required
+add product new 
+error message needed when iam clicking generate product
+
+Error message need to be kept for all mandatory fields
+
+for one supplier iam giving 3product and iam deleeting 3rd producct but rest 2are deleted what exactly i was deleting it is not deleted
+
+
+
+

@@ -1,0 +1,36 @@
+SKILLS
+
+TECHNICAL SKILLS:
+
+• Programming languages Core java
+
+• Manual testing
+
+• Test Automation Tools like Selenium
+
+• SQL for (Database Testing)
+
+• MongoDb for (Database testing)
+
+• Performance Testing tool Jmeter
+
+• Postman (API Testing)
+
+• Appium (Mobile Testing)
+
+
+• Jira (Issue Tracking)
+
+
+Programming languages Core java
+Test Automation Tools like Selenium
+Postman (API Testing)
+Manual testing
+SQL for (Database Testing)
+Performance Testing tools like jmeter
+Jira (Issue Tracking)
+BDD Framework and Data driven framework
+Zoho Sprint
+aircheaf@123
+Cheafair@123
+

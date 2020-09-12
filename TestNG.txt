@@ -1,0 +1,112 @@
+TestNG
+TestNG-testing next generation framework(unit testing framework),(unit level test case)
+Purpose-design test cases in a systematic way
+Open source its free its available in the form of jar file
+This is also called java unit testing framework only for java.
+ADVANTAGES
+1.design test cases in systematic way
+2.Generate good HTML reports
+3.gives lots of differnt annotation
+4.u can define ur test cases priorities/sequence
+5.dependency feature(one tescase is dependent on other test cases)
+6.grouping
+7.data provider *(u want to execute ur tase case multiple
+ time with different set of data eg-login)
+8.TestNG is also known as TDD frame work(test deriven development)
+in agile methodlogy testng will help u to design ur own test cases.
+
+HOW TO INSTALL
+
+
+
+
+
+
+
+ANNOTATION
+
+precondition annotation
+testcases annotation
+post condition annotation
+
+@BeforeClass(each and every annotation should start with one method)
+
+
+package com.test;
+import org.testng.annotations.BeforeClass;
+
+public class TestNgBasics
+{
+
+//PreCondition annotation ----starting with Before
+@BeforeSuit
+public void setUp()
+{
+System.out.println("setup system property for chrome");
+}
+@BeforeClass
+
+public void launchMethod()
+{
+System.out.println("launch chrome Browser"); 
+}
+@BeforeMethod
+public class url()
+{
+System.out.println("Enter Url");
+}
+@BeforeTest
+public void login()
+{
+System.out.println("login to app");
+}
+
+//testcases--- starting with @Test
+
+@Test
+public void googleTitleTest()
+{
+System.out.println();
+}
+
+//postcondition-----starting with after
+@AfterMethod
+public void Logout()
+{
+System.out.println("Logout from app");
+}
+@AfterTest
+public void deleteAllCookies()
+{
+System.out.println("Delete all Cookies");
+}
+@AfterClass
+public void closeBrowser()
+{
+System.out.println("Close Browse");
+}
+@AfterSuit
+public void generateTestReport()
+{
+System.out.println();
+}
+
+
+
+BEFORE SUIT
+BEFORE TEST
+BEFORE CLASS
+BEFORE METHOD
+TEST
+AFTER METHOD
+AFTER CLASS
+AFTER TEST
+AFTER SUIT
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+//java program to demonstrate the use of static variable
+class Student06{
+int rollno;//instance variable
+String name;
+static String college="BPUT";//static variable
+// constructor
+Student06(int r,String n)
+{
+rollno=r;
+name=n;
+}
+void display()
+{
+System.out.println(rollno+" "+name+" "+college);}
+}
+//test class to show the values of objects
+public class TestStaticVariable1
+{
+public static void main(String args[])
+{
+Student06 s1=new Student06();
+Student06 s2=new Student06();
+s1.display();
+s2.display();
+}
+}
