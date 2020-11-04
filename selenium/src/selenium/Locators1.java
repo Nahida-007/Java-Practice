@@ -49,7 +49,7 @@ public class Locators1 {
 		WebElement submit = driver.findElement(By.cssSelector("input[name='submit']"));
 		submit.click();
 		
-		//driver.quit();
+		driver.quit();
 		
 
 	}
